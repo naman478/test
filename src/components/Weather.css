@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.cards{
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+height: 70vh;
+width:27vw;
+padding:0px;
+font-family: "poppins";
+position: relative;
+padding-top: 70px;
+padding-right: 10px;
+text-transform: uppercase;
+}
+
+.parent{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:2px;
+    position: relative;
+    height: 140px;
+}
+
+img{
+    width:150px;
+}
+
+.middle_text{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+h1{
+    font-size: xx-large;
+    color:blue
+}
+h4{
+    color:  yellow;;
+}
+.last{
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap:10px;
+    margin-right: 10px;
+    padding-left:30px;
+}
+input{
+    margin-left: 16%;
+    height:30px;
+    width:220px;
+    margin-bottom: 30px;
+    border-radius: 17px;
+    padding: 17px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1.5px solid black;
+    margin-top: 7px;
+    position:absolute;
+    top:19%;
+    z-index:1;
+    left:26%;
+    font-size: larger;
+    outline: none;
+}
+.icon{
+    align-items: center;
+    margin-left: 0px;
+    position: relative;
+}
+h2{
+    position: absolute;
+    bottom:-4px;
+    left:38px;
+}
+.red{
+    color: red;
+}
+h4{
+    font-size: larger;
+}
+.hi{
+    font-size:xx-large;
+    margin: 0;
+    text-align: center;
+    color:aqua;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px){
+    .last{
+        margin-top: 20px;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+        margin-left: 43px;
+    }
+    h1{
+        font-size: 27px;
+        color:blue
+    }
+    h4{
+        font-size: large;
+    }
+    .cards{
+        height: 70vh;
+        width:70vw;
+    }
+    .icon{
+        display: none;
+    }
+    input{
+        width:170px;
+        padding: 15px;
+        margin-top: 7px;
+        left:13%;
+        font-size: medium;
+    }
+    .middle_text{
+     margin-top: 15px;
+     margin-left: -25px;
+    }
+}
